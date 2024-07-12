@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import authService from '../AppWrite/Authentication'
 
 function Home() {
 
@@ -7,10 +8,12 @@ function Home() {
   const isAuth = useSelector(state =>  state.isAuthenticated)
   console.log(isAuth)
   console.log(data)
+  const auth = authService;
 
   return (
     <div>
       Home
+      {console.log(auth)}
     </div>
   )
 }
