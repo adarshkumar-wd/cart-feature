@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       },
       {
         element: <SignUp />,
-        path: "signup"
+        path: "sign-up"
       },
       {
         element: <Login />,
@@ -38,6 +38,8 @@ const router = createBrowserRouter([
 
   }
 ])
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={Store}>
